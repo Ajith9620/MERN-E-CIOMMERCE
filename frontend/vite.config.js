@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api/": "https://mern-e-ciommerce-backend.vercel.app/",
-      "/uploads/": "https://mern-e-ciommerce-backend.vercel.app/",
+      "/api/": "http://localhost:5000/",
+      "/uploads/": "http://localhost:5000/",
     },
   },
 });
